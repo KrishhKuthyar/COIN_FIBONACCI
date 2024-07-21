@@ -35,7 +35,7 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./spring_backend
           push: true
           tags: ${{ secrets.KEI_DOCKER_USERNAME }}/coin-fibonacci:${{ github.sha }}
 
