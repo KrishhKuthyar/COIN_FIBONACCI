@@ -3,7 +3,7 @@ name: CD with Docker and AWS
 on:
   push:
     branches:
-      - 'release/v[0-9]+.[0-9]+'
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
