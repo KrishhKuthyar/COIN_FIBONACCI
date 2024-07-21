@@ -23,7 +23,7 @@ http://coin-fibonacci-frontend.s3-website-us-east-1.amazonaws.com/
 ## Backend
 
 The backend Spring Boot API can be tested with the following endpoint:
-[http://13.228.168.109:8080/api/v1/coin-change](http://13.228.168.109:8080/api/v1/coin-change)
+http://34.207.129.46:8080
 
 
 <br>
@@ -59,20 +59,7 @@ The API will respond with the minimum number of coins needed to make the given a
 
 The Docker image for the Spring Boot backend is available at:
 
-```text
-keiyam/oracle_spring_backend/70cb26df570de4f56f22738ad970308986904e1a
-```
+gk22a/coin-fibonacci:36249c78075f7fbba6e5946bacdd433da7794f04
 
-You can pull and run the Docker image using the following commands:
-
-```bash
-docker pull keiyam/oracle_spring_backend:70cb26df570de4f56f22738ad970308986904e1a
-docker run -d -p 8080:8080 keiyam/oracle_spring_backend:70cb26df570de4f56f22738ad970308986904e1a
-```
-
-On arm64 (Apple Silicon Macs)
-```bash
-docker run --platform linux/amd64 -d -p 8080:8080 keiyam/oracle_spring_backend:70cb26df570de4f56f22738ad970308986904e1a
-```
 
 
